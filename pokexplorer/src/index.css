@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none;
+  outline: none;
+  appearance: none;
+  background: none;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.max-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.bttn {
+  background-color: gold;
+  color: purple;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bttn:active {
+  background-color: lightpink;
+  transition: transform 0.5s ease-in, background-color 0.2s;
+}
+
+.pagination {
+  margin-top: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination button {
+  min-width: 90px;
+}
