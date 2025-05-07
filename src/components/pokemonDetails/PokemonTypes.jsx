@@ -23,7 +23,7 @@ const colours = {
 
 const PokemonTypes = ({ types }) => (
     <div className="type">
-        {types.map((typeObj, index) => (
+        {types?.map((typeObj, index) => (
             <span
                 key={index}
                 style={{ backgroundColor: colours[typeObj.type.name] }}
