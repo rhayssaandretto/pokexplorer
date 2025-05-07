@@ -1,0 +1,139 @@
+.searched-pokemon {
+    height: 100vh;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.searched-pokemon-header {
+    margin-bottom: 1rem;
+}
+
+.pokemon-details {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.searched-pokemon-info {
+    flex: 1;
+}
+
+.searched-pokemon-info h4 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.searched-pokemon-info .type {
+    display: flex;
+    gap: 0.5rem;
+    margin-block: 1rem;
+}
+
+.searched-pokemon-info .type span {
+    padding: 0.5rem;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    min-width: 100px;
+    text-align: center;
+}
+
+.abilities {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.abilities h5 {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.ability-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.ability-box {
+    padding: 10px 16px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    text-transform: capitalize;
+    min-width: 100px;
+    text-align: center;
+}
+
+.ability-box.hidden {
+    background-color: #f9f9f9;
+    border-color: #aaa;
+    font-style: italic;
+    color: #555;
+}
+
+.previewImage img {
+    width: 400px;
+    height: 400px;
+}
+
+@media (max-width: 786px) {
+    .pokemon-details {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .searched-pokemon-info {
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .searched-pokemon .type {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+        gap: 0.5rem;
+    }
+
+    .abilities {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .ability {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+
+    .previewImage {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .previewImage img {
+        width: 60%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .searched-pokemon-header {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
