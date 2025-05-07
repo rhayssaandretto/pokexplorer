@@ -111,7 +111,7 @@ Projeto desenvolvido para teste técnico,  usando React + Vite
 
 1. **Clone o repositório:**
  ```
-   git clone https://github.com/seu-usuario/pokexplorer.git
+   git clone https://github.com/rhayssaandretto/pokexplorer.git
    cd pokexplorer
   ```
 2. **Instale as dependências:**
